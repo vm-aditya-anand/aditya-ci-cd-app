@@ -16,16 +16,21 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-
-        release {
-        }
-    }
+//    signingConfigs {
+//
+//        release {
+//        }
+//    }
 
 
     buildTypes {
         release {
             minifyEnabled false
+//            signingConfigs {
+//
+//                release {
+//                }
+//            }
             //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
