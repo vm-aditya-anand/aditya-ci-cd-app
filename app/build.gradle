@@ -16,33 +16,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-//    signingConfigs {
-//
-//        release {
-//        }
-//    }
-
-    
-//   signingConfigs {
-//       release {
-//           storeFile file(RELEASE_STORE_FILE)
-//           storePassword System.getenv("KEYSTORE_PASSWORD")
-//           keyAlias System.getenv("KEYSTORE_ALIAS")
-//           keyPassword System.getenv("KEYSTORE_PASSWORD")
-//       }
-//   }
 
 
 
     buildTypes {
         release {
             minifyEnabled false
-//            signingConfigs {
-//
-//                release {
-//                }
-//            }
-            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
