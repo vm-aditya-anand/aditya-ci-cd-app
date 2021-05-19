@@ -5,7 +5,7 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
-    flavorDimensions "default"
+//    flavorDimensions "default"
 
     defaultConfig {
         applicationId "in.aditya.adityacicdapp"
@@ -17,18 +17,18 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    productFlavors {
-        dev{
-
-        }
-        qa{
-
-        }
-        prod{
-
-        }
-
-    }
+//    productFlavors {
+//        dev{
+//
+//        }
+//        qa{
+//
+//        }
+//        prod{
+//
+//        }
+//
+//    }
 
 
 
