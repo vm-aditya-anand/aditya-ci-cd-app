@@ -26,4 +26,10 @@ jobs:
       
     - name: Promote Google Play open testing to production
       uses: boswelja/promote-play-beta-action@v1.0.0
+      with:
+        service-account-json-raw: ${{ secrets.SERVICE_ACCOUNT_JSON }}
+        packageName: in.aditya.adityacicdapp
+        inapp-update-priority: 0
+        user-fraction: 0.0
+        
 
