@@ -22,7 +22,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew assembleDevDebug
+      run: ./gradlew assembleBuildDev
       
     - name: Promote Google Play open testing to production
       uses: boswelja/promote-play-beta-action@v1.0.0
