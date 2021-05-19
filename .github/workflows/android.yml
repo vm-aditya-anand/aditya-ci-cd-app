@@ -31,6 +31,6 @@ jobs:
       uses: boswelja/promote-play-beta-action@v1.0.0
       with: 
        service-account-json-raw: 'service-account-json-raw'
-       packageName: 'in.aditya.adityacicdapp'
+       package-name: 'in.aditya.adityacicdapp'
        inapp-update-priority: '1.0.0'
        user-fraction: '0.0'
