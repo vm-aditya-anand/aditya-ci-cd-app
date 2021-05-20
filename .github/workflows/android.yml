@@ -39,7 +39,7 @@ jobs:
         track: internalsharing
         inAppUpdatePriority: 0
         userFraction: 0.1
-        whatsNewDirectory: aditya-ci-cd-app/whatsNewDirectory/whatsnew-en-US
+        #whatsNewDirectory: aditya-ci-cd-app/whatsNewDirectory/whatsnew-en-US
 
         #mappingFile: app/build/outputs/mapping/release/mapping.txt
 
