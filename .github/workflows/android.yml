@@ -24,10 +24,15 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleDebug
       
-    - name: Promote Google Play open testing to production
-      uses: boswelja/promote-play-beta-action@v1.0.0
+    - name: Upload Android Release to Play Store
+      uses: r0adkll/upload-google-play@v1
       with:
-        service-account-json-raw: ${{ secrets.SERVICE_ACCOUNT_JSON_RAW }}
-        package-name: in.aditya.adityacicdapp
-        inapp-update-priority: '1.0.0'
-        user-fraction: '0.0'
+        serviceAccountJson: ${{ secrets.SERVICE_ACCOUNT_JSON_RAW }}
+        packageName: in.aditya.adityacicdapp
+        releaseFile: app/build/outputs/bundle/debug/*.apk
+        track: internalsharing
+        inAppUpdatePriority: 0
+        userFraction: 0.0
+        whatsNewDirectory: distribution/whatsnew/en-us
+        mappingFile: app/build/outputs/mapping/release/mapping.txt
+
